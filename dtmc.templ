@@ -1,0 +1,10 @@
+dtmc
+
+module M
+    x : [0..1] init 0;
+
+    [] x=0 -> (x'=1);
+    [] x=1 -> (x'=0);
+endmodule
+
+label goal = x=1;
